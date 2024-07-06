@@ -94,7 +94,7 @@ body {
   top: calc(100% + 1px);
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: #000; /* Changed to black */
+  background-color: #333333; /* Changed to black */
 }
 .mic-icon::after {
   border: 2px solid;

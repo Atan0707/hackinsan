@@ -1,16 +1,14 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-function Home() {
+function Home2() {
   const [isMicOn, setIsMicOn] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
-  const navigate = useNavigate();
 
   return (
     <div className="background">
       <div className="table">
         <div className="header">
-          <h1>This is header</h1>
+          <h1>Ni Home 2</h1>
           {!buttonClicked && <div className="mic-icon"></div>}
         </div>
         {/* if button is pressed */}
@@ -39,13 +37,7 @@ function Home() {
             </button>
           )}
           {buttonClicked && (
-            <button
-              className="button"
-              onClick={() => {
-                setIsMicOn(false);
-                setTimeout(() => navigate("/Home2"), 5000);
-              }}
-            >
+            <button className="button" onClick={() => setIsMicOn(false)}>
               Stop
             </button>
           )}
@@ -55,4 +47,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home2;
