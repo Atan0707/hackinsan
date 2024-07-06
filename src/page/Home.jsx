@@ -43,7 +43,7 @@ function Home() {
               className="button"
               onClick={() => {
                 setIsMicOn(false);
-                setTimeout(() => navigate("/Home2"), 5000);
+                setTimeout(() => navigate("/ai"), 3000);
               }}
             >
               Stop
