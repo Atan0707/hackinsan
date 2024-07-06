@@ -30,7 +30,7 @@ const AIVideo = () => {
           <source src="../src/assets/ajol.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="button-ai">
+        <div className="">
           <button className="button-ai" onClick={handleClick}>
             Next
           </button>

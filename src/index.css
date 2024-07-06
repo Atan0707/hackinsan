@@ -208,6 +208,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full height of the viewport */
+  width: 300px;
 }
 
 .container-ai {
@@ -217,12 +218,20 @@ body {
 
 .button-ai {
   position: absolute;
-  bottom: 0;
+  bottom: 150px;
   left: 50%;
-  transform: translateX(-50%); /* Centers the button horizontally */
-  background-color: #000000; /* Pitch black background */
-  color: #ffffff; /* White text */
-  border: none; /* Removes border */
-  padding: 10px 20px; /* Adds padding */
+  transform: translateX(-50%);
+  background-color: #902db1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
   font-size: 18px;
+  border-radius: 5px; /* Softer edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
+}
+
+.button-ai:hover {
+  background-color: #7a2699; /* Slightly darker shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
 }
