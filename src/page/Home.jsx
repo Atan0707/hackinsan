@@ -8,13 +8,18 @@ function Home() {
       <div className="header">
         <h1>This is header</h1>
       </div>
-      <i className="mic-icon"></i>
-      {isMicOn && (
+      {/* if button is pressed */}
+      {isMicOn === true ? (
         <div className="mic">
           <i className="mic-icon"></i>
           <div className="mic-shadow"></div>
         </div>
+      ) : (
+        <div className="loader-container">
+          <div className="loader"></div>
+        </div>
       )}
+
       <div className="container">
         <button className="button" onClick={() => setIsMicOn(true)}>
           On

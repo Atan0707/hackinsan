@@ -47,21 +47,21 @@ body {
 .mic::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  border-radius: 100%;
+  border-radius: 50%;
   z-index: 2;
-  box-shadow: 0 0 20px 20px #555; /* Changed to gray */
+  box-shadow: 0 0 10px 10px #555; /* Changed to gray */
 }
 .mic::before {
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   background-color: #aaa; /* Light gray */
 }
 .mic::after {
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   background-color: #777; /* Medium gray */
   animation: circle-size 0.8s linear infinite alternate;
 }
@@ -106,8 +106,8 @@ body {
   transform: translate(-50%, 0);
 }
 .mic-shadow {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,8 +142,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust the height as needed */
-  padding-top: 250px;
+  height: 120vh;
+  /* height: 100vh; Adjust the height as needed */
+  padding-top: 50px;
 }
 
 /* Button styles */
@@ -169,4 +170,28 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+
+/* HTML: <div class="loader"></div> */
+
+.loader-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 375px;
+  left: 42%;
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
 }
