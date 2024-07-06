@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+function Home3() {
   const [isMicOn, setIsMicOn] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ function Home() {
               className="button"
               onClick={() => {
                 setIsMicOn(false);
-                setTimeout(() => navigate("/ai1"), 3000);
+                setTimeout(() => navigate("/ai3"), 3000);
               }}
             >
               Stop
@@ -55,4 +55,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home3;

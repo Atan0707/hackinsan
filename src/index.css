@@ -196,11 +196,17 @@ body {
   }
 }
 
+:root {
+  --background-default: #fff; /* Default background */
+  --background-ai: #000; /* Specific background for .background-ai */
+}
+
 .background-ai {
-  background-color: #000;
+  background-color: var(--background-ai);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .video-ai {
@@ -234,4 +240,19 @@ body {
 .button-ai:hover {
   background-color: #7a2699; /* Slightly darker shade on hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.header-ai {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the header */
+  width: 20%;
+  text-align: center; /* Centers text horizontally */
+  color: #fff; /* Changes text color to black for readability */
+  background-color: #902db1; /* Adds a white background */
+  padding: 10px 0; /* Adds vertical padding */
+  border-radius: 10px 10px 10px 10px; /* Softens bottom corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+  z-index: 10; /* Ensures the header is above the video */
 }

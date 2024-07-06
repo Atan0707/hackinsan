@@ -10,7 +10,7 @@ function Home2() {
     <div className="background">
       <div className="table">
         <div className="header">
-          <h1>Page 2</h1>
+          <h1>Atan (User)</h1>
           {!buttonClicked && <div className="mic-icon"></div>}
         </div>
         {/* if button is pressed */}
@@ -43,7 +43,7 @@ function Home2() {
               className="button"
               onClick={() => {
                 setIsMicOn(false);
-                setTimeout(() => navigate("/ai"), 3000);
+                setTimeout(() => navigate("/ai2"), 3000);
               }}
             >
               Stop
