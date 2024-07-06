@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Home() {
   const [isMicOn, setIsMicOn] = useState(false);
