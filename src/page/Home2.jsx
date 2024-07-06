@@ -10,7 +10,7 @@ function Home2() {
     <div className="background">
       <div className="table">
         <div className="header">
-          <h1>Home 2</h1>
+          <h1>Page 2</h1>
           {!buttonClicked && <div className="mic-icon"></div>}
         </div>
         {/* if button is pressed */}
